@@ -1,79 +1,91 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# User Directory App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Overview
+The **User Directory App** is a React Native application that fetches and displays a list of users from the JSONPlaceholder API. Users can view detailed information about each user by tapping on an entry in the list. The app is designed with a clean UI and leverages React Native's modern capabilities.
 
-## Step 1: Start the Metro Server
+## Features
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Core Features
+1. **User List Screen**:
+   - Fetches user data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users).
+   - Displays a list of users with their names and email addresses.
+   - Navigates to a details screen on user selection.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+2. **User Details Screen**:
+   - Displays detailed information for a selected user:
+     - Name
+     - Email
+     - Address (Street, City, Zip)
+     - Company Name
+   - Includes a back navigation button to return to the user list.
 
-```bash
-# using npm
-npm start
+3. **API Integration**:
+   - Data fetching is handled using `fetch` or `axios`.
+   - Displays error messages in case of network failures or empty data.
+   - Includes a loading spinner while data is being fetched.
 
-# OR using Yarn
-yarn start
-```
+4. **Navigation**:
+   - Implements stack navigation using [React Navigation](https://reactnavigation.org).
 
-## Step 2: Start your Application
+5. **State Management**:
+   - Manages state using `useState` and `useEffect` hooks.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+6. **UI/UX**:
+   - Clean and simple design.
+   - Uses `FlatList` for performance optimization.
+   - Styled using `StyleSheet` and responsive layouts.
 
-### For Android
+### Bonus Features
+- **Search Bar**: Allows users to filter the list by name.
+- **Sort Users**: Enables sorting by name or email.
+- **User Profile Picture**: Displays a placeholder image for each user.
 
-```bash
-# using npm
-npm run android
+## How to Run the App
 
-# OR using Yarn
-yarn android
-```
+### Prerequisites
+1. Node.js and npm installed on your machine.
+2. React Native CLI or Expo CLI.
+3. A simulator (iOS or Android) or a physical device.
 
-### For iOS
+### Setup
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-repository-url.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd user-directory-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the application:
+   - For Expo:
+     ```bash
+     npm start
+     ```
+   - For React Native CLI:
+     ```bash
+     npx react-native run-android
+     ```
+     or
+     ```bash
+     npx react-native run-ios
+     ```
 
-```bash
-# using npm
-npm run ios
+## Challenges
+- **Error Handling**: Ensuring proper error handling for API failures and empty data responses.
+- **Sort Users**: Implementing sorting functionality for name and email while maintaining performance.
+- **User Profile Picture**: Dynamically displaying placeholder images for users.
+- **Responsive Design**: Designing an adaptive UI for both small and large screens.
 
-# OR using Yarn
-yarn ios
-```
+## Future Improvements
+- Add infinite scrolling to the user list for enhanced user experience.
+- Allow users to edit and save details directly within the app.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Resources
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [React Navigation Documentation](https://reactnavigation.org/docs/getting-started)
+- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
