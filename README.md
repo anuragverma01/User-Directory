@@ -4,6 +4,10 @@
 ## Overview
 The **User Directory App** is a React Native application that fetches and displays a list of users from the JSONPlaceholder API. Users can view detailed information about each user by tapping on an entry in the list. The app is designed with a clean UI and leverages React Native's modern capabilities.
 
+## Demo
+Here’s a short demo of the app in action:  
+![User Directory Demo](https://github.com/anuragverma01/User-Directory/blob/main/screens/Assets/screen.gif)
+
 ## Features
 
 ### Core Features
@@ -81,11 +85,3 @@ The **User Directory App** is a React Native application that fetches and displa
 - **User Profile Picture**: Dynamically displaying placeholder images for users.
 - **Responsive Design**: Designing an adaptive UI for both small and large screens.
 
-## Future Improvements
-- Add infinite scrolling to the user list for enhanced user experience.
-- Allow users to edit and save details directly within the app.
-
-## Resources
-- [React Native Documentation](https://reactnative.dev/docs/getting-started)
-- [React Navigation Documentation](https://reactnavigation.org/docs/getting-started)
-- [JSONPlaceholder API](https://jsonplaceholder.typicode.com/)
