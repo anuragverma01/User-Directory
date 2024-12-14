@@ -8,6 +8,8 @@ The **User Directory App** is a React Native application that fetches and displa
 Here’s a short demo of the app in action:  
 ![User Directory Demo](https://github.com/anuragverma01/User-Directory/blob/main/screens/Assets/screen.gif)
 
+[APK LINK](https://github.com/anuragverma01/User-Directory/tree/main/APK)
+
 ## Features
 
 ### Core Features
